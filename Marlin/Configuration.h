@@ -102,7 +102,7 @@
   #define FB_G6_BLTOUCH
 #endif
 
-// #define PSU
+#define PSU
 #define SAFE_BABYSTEP_TO_Z_OFFSET
 #define FINISH_SCREEN
 #define DISABLE_AUTOHOME_MENU
@@ -438,10 +438,10 @@
 #ifdef PSU
   #define PSU_CONTROL
 #endif
-//#define PSU_NAME "Power Supply"
+#define PSU_NAME "Power Supply"
 
 #if ENABLED(PSU_CONTROL)
-  #define MKS_PWC                 // Using the MKS PWC add-on
+  //#define MKS_PWC                 // Using the MKS PWC add-on
   //#define PS_OFF_CONFIRM          // Confirm dialog when power off
   //#define PS_OFF_SOUND            // Beep 1s when power off
   #define PSU_ACTIVE_STATE HIGH      // Set 'LOW' for ATX, 'HIGH' for X-Box
