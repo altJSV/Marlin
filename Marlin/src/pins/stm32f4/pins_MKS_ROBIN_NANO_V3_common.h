@@ -144,15 +144,19 @@
 //#define TEMP_0_CS_PIN             HEATER_1_PIN  // TC2 - CS2
 
 #define MT_DET_1_PIN                      PA4   // MT_DET
-#define MT_DET_2_PIN                      PC4
+//#define MT_DET_2_PIN                      PC4
 #define MT_DET_PIN_STATE                  LOW
 
 
 #ifndef FIL_RUNOUT_PIN
   #define FIL_RUNOUT_PIN                    MT_DET_1_PIN
 #endif
-#ifndef FIL_RUNOUT2_PIN
-  #define FIL_RUNOUT2_PIN                   MT_DET_2_PIN
+//#ifndef FIL_RUNOUT2_PIN
+  //#define FIL_RUNOUT2_PIN                   MT_DET_2_PIN
+//#endif
+
+#ifndef PS_ON_PIN
+  #define PS_ON_PIN                       PC4   // PW_OFF
 #endif
 
 #ifndef POWER_LOSS_PIN
